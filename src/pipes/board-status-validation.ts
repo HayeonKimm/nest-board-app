@@ -4,7 +4,7 @@ import {
   PipeTransform,
 } from '@nestjs/common';
 import { validate } from 'class-validator';
-import { BoardStatus } from 'src/boards/boards.model';
+import { BoardStatus } from 'src/boards/boards.status';
 
 export class BoardstatusValidationPipe implements PipeTransform {
   readonly StatusOptions = [BoardStatus.PRIVATE, BoardStatus.PUBLIC];
